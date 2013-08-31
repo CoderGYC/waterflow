@@ -28,6 +28,10 @@
     self.collectionView.backgroundColor = [UIColor clearColor];
     self.collectionView.autoresizingMask = ~UIViewAutoresizingNone;
     
+    UIView *header = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 100)];
+    header.backgroundColor = [UIColor yellowColor];
+    self.collectionView.headerView = header;
+    
     // Specify number of columns for both iPhone and iPad
     self.collectionView.numColsPortrait = 2;
     self.collectionView.numColsLandscape = 4;
